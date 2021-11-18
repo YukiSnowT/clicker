@@ -22,15 +22,15 @@
         ctx.fillStyle='#000';
         ctx.textAlign = "left";
         ctx.textBaseline = "middle";
-        if(myPrice[13]<100&&myPrice[14]==0&&myPrice[15]==0&&myPrice[16]==0&&myPrice[17]==0){
-            ctx.font = mojisizeB + "px sans";////ココノセイ！！
-        }else if(myPrice[14]<1000&&myPrice[15]==0&&myPrice[16]==0&&myPrice[17]==0){
-            ctx.font = "10px sans";
-        }else{
-            ctx.font = "0px sans";
-        }
+        // if(myPrice[13]<100&&myPrice[14]==0&&myPrice[15]==0&&myPrice[16]==0&&myPrice[17]==0){
+            ctx.font = mojisizeB + "px sans";////修正済み
+        // }else if(myPrice[14]<1000&&myPrice[15]==0&&myPrice[16]==0&&myPrice[17]==0){
+        //     ctx.font = "10px sans";
+        // }else{
+        //     ctx.font = "0px sans";
+        // }
         ctx.fillText("所持金：",5,cvy/16);
-        ctx.font = mojisizeB + "px sans";/////ココノセイ！
+        ctx.font = mojisizeB + "px sans";/////修正済み
         ctx.textAlign = "right";
         ctx.textBaseline = "middle";
         ctx.fillText(priceText(n), cvx-5,cvy/16);
